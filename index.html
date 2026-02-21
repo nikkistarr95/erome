@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Where to next?</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  overflow:hidden;
+}
+
+/* Fundo invertido + blur */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:url("https://preview.redd.it/89bdua83trnf1.jpg?width=1080&crop=smart&auto=webp&s=45fcef1b37c40e60d9663d1758ccb78176262fcf") center/cover no-repeat;
+  filter:blur(16px) brightness(0.35);
+  transform:scale(1.1) scaleX(-1);
+  z-index:-1;
+}
+
+/* Card */
+.card{
+  width:90%;
+  max-width:420px;
+  padding:28px;
+  border-radius:20px;
+  background: rgba(20,20,20,0.55);
+  backdrop-filter: blur(20px);
+  border:1px solid rgba(255,255,255,0.15);
+  text-align:center;
+  box-shadow:0 0 40px rgba(0,0,0,0.6);
+}
+
+/* Título */
+h1{
+  font-size:26px;
+  margin-bottom:6px;
+  text-shadow:0 0 10px rgba(255,255,255,.18);
+}
+
+.subtitle{
+  color:#bbb;
+  font-size:14px;
+  margin-bottom:22px;
+  text-shadow:0 0 6px rgba(255,255,255,.12);
+}
+
+/* Botão */
+.btn{
+  display:block;
+  text-decoration:none;
+  padding:18px;
+  border-radius:16px;
+  margin:12px 0;
+  font-weight:600;
+  letter-spacing:.2px;
+  text-shadow:0 0 8px rgba(255,255,255,.15);
+  transition:.25s;
+}
+
+/* OnlyFans premium glow */
+.primary{
+  background: linear-gradient(90deg,#2ea4ff,#1b6cff);
+  color:white;
+  box-shadow:0 8px 28px rgba(46,164,255,.45);
+}
+
+.primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 45px rgba(46,164,255,.75);
+}
+
+/* Ícones sociais */
+.socials{
+  margin-top:22px;
+  display:flex;
+  justify-content:center;
+}
+
+.socials a{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background: rgba(255,255,255,0.08);
+  border:1px solid rgba(255,255,255,0.25);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:.25s;
+}
+
+.socials a:hover{
+  background: rgba(255,255,255,0.2);
+  transform:scale(1.08);
+  box-shadow:0 0 18px rgba(255,255,255,.35);
+}
+
+/* Ícone branco */
+.socials img{
+  width:19px;
+  filter: brightness(0) invert(1) drop-shadow(0 0 4px rgba(255,255,255,.35));
+  opacity:.9;
+  transition:.25s;
+}
+
+.socials a:hover img{
+  opacity:1;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <h1>Where to next?</h1>
+  <div class="subtitle">Pick your poison. Full content inside.</div>
+
+  <!-- BOTÃO ONLYFANS -->
+  <a class="btn primary"
+     href="https://onlyfans.com/nikkistarr95"
+     target="_blank">
+     Go to OnlyFans
+  </a>
+
+  <!-- INSTAGRAM -->
+  <div class="socials">
+    <a href="https://www.instagram.com/nikkistarr___" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png">
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>
